@@ -28,18 +28,46 @@ const readline = require('readline');
 
 const fs = require('fs');
 
-const anotherQuestion = readline.createInterface({
+// const anotherQuestion = readline.createInterface({
+//     input : process.stdin,
+//     output: process.stdout
+// })
+
+// anotherQuestion.question('What file would you like to read? \n', (fileName) =>{
+//     fs.readFile(fileName, 'utf8', (err, data)=>{
+//         if(err) console.log(err);
+//         console.log('filename: ' + fileName);
+//         console.log(data);
+//     })
+//     anotherQuestion.close();
+// })
+
+// 3 read and write to a file
+    // Write a program to prompt the user for two file names, the first file will be the input and the 
+    // second file will be the output. The program will read in the contents of the input file, convert 
+    // its text to all caps, and then write the resulting contents to the output file.
+let inputFile;
+let outputFile;
+let inputFileText;
+const twoQuestionsNow = readline.createInterface({
     input : process.stdin,
     output: process.stdout
 })
 
-anotherQuestion.question('What file would you like to read? \n', (fileName) =>{
-    fs.readFile(fileName, 'utf8', (err, data)=>{
-        if(err) throw err;
-        console.log(data);
+twoQuestionsNow.question('What file would you like to read? \n', (inputFileName)=>{
+    inputFile = inputFileName;
+    twoQuestionsNow.question('What file would you like to write to?\n', (outputFileName)=>{
+        outputFile = outputFileName;
+        twoQuestionsNow.close();
+        fs.readFile(inputFile, 'utf8', (err, data)=>{
+            if(err) console.log(err);
+            inputFileText = data.toUpperCase();
+        
+            fs.writeFile(outputFile, inputFileText, 'utf8', (error)=>{
+                if(error) console.log(error);
+                console.log('The file has been saved!');
+            })
+        })
     })
-    anotherQuestion.close();
 })
-
-// 3 read and write to a file
 
