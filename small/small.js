@@ -2,20 +2,23 @@
 // console.log("Hello World, I am in Node.");
 
 //3 
-// const http = require('http');
+const http = require('http');
 
-// const hostname = '127.0.0.1';
-// const port = 3000;
+//Dont do anything with the request
+const server = http.createServer((request, response)=>{
+    response.statusCode = 200; // We will always reply with 200 for this server
+    response.setHeader('Content-Type', 'text/plain'); // We will send back plain text
+    response.end("Hello World");// finalizes the respone and sends it back to the client
+});
 
-// const server = http.createServer((req, res)=>{
-//     res.statusCode = 200;
-//     res.setHeader('Content-Type', 'text/plain');
-//     res.end("Hello World");
-// });
+const hostname = '127.0.0.1'; // local IP address
+const port = 3000; // 3000 port is usually open.
 
-// server.listen(port, hostname, ()=>{
-//     console.log(`Server is running at http://${hostname}:${port}/`);
-// });
+// cant except requests until our server is open and listening for requests, below is how we do that.
+server.listen(port, hostname, ()=>{
+    // this function will run once the function starts listening.
+    console.log(`Server is running at http://${hostname}:${port}/`);
+});
 
 //6
 const cowsay = require('cowsay');
