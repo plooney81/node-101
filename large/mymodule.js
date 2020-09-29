@@ -1,5 +1,3 @@
-
-
 module.exports = function(filePath, extension, callback){
     const fs = require('fs');
     results = [];
