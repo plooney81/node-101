@@ -10,4 +10,8 @@ function readNewLineChar(text){
 
 const fs = require('fs');
 data = fs.readFileSync(process.argv[2], 'utf8');
-console.log(readNewLineChar(data));
+// console.log(readNewLineChar(data));
+
+module.exports = {
+    newLines : readNewLineChar
+};
