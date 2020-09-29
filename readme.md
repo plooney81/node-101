@@ -1,4 +1,5 @@
 # Node.js 101 <!-- omit in toc -->
+![alt text](./nodeJS.png "The Node.js Logo")
 
 - [About this repository](#about-this-repository)
 - [Lessons Learned](#lessons-learned)
@@ -16,6 +17,7 @@
   * [Path](https://nodejs.org/dist/latest/docs/api/path.html#path_path)
   * [Readline](https://nodejs.org/dist/latest/docs/api/readline.html#readline_readline)
 * How to install and access third party modules
+  * NPM
 * ADD
 * MORE
 * Later
