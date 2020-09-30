@@ -22,8 +22,10 @@
   1. Node
   2. Express - Node.js library for creating servers.
 * [Object Destructuring](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment#Object_destructuring)
-* nodemon module
+* nodemon command line module
   * gives the ability to make changes to a server without having to stop running the server
+* express generator command line module
+  * give the ability to quickly and easily generate an express app outline with required documentation.
 * ADD
 * MORE
 * Later

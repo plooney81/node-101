@@ -9,13 +9,19 @@ const app = express();
 const server = http.createServer(app);
 
 app.get('/', (req, res)=>{
-    res.send('<h1>Hello World</h1>');
+    const name = req.query.name || 'World';
+    res.send(`<h1>Hello ${name}</h1>`);
 })
 
 app.get('/greet/:name', (req, res)=>{
     const {name} = req.params;
 
     res.send(`<h1>Hello, ${name}!</h1>`)
+})
+
+app.get('/year', (req, res)=>{
+    const {age} = req.query;
+    res.send(`<h1>You were born in ${2020 - parseInt(age, 10)}</h1>`)
 })
 
 app.get('/:animals', (req, res)=>{
@@ -33,6 +39,7 @@ app.get('/:animals', (req, res)=>{
     res.send(`<h1>${returnStatement}</h1>`);
 
 })
+
 
 server.listen(port, hostname, ()=>{
     console.log(`Server is running at http://${hostname}:${port}/`);
