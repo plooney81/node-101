@@ -4,7 +4,8 @@
   "description": "![alt text](./nodeJS.png \"The Node.js Logo\")",
   "main": "log.js",
   "dependencies": {
-    "cowsay": "^1.4.0"
+    "cowsay": "^1.4.0",
+    "nodemon": "^2.0.4"
   },
   "devDependencies": {},
   "scripts": {
