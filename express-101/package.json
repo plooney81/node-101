@@ -2,11 +2,11 @@
   "name": "express-101",
   "version": "1.0.0",
   "description": "",
-  "main": "expressWay.js",
+  "main": "small-ex.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node expressWay.js",
-    "dev": "nodemon expressWay.js"
+    "start": "node small-ex.js",
+    "dev": "nodemon small-ex.js"
   },
   "keywords": [],
   "author": "",
