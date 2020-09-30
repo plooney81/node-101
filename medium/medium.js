@@ -60,11 +60,11 @@ twoQuestionsNow.question('What file would you like to read? \n', (inputFileName)
         outputFile = outputFileName;
         twoQuestionsNow.close();
         fs.readFile(inputFile, 'utf8', (err, data)=>{
-            if(err) console.log(err);
+            if(err) return console.log(err);
             inputFileText = data.toUpperCase();
         
             fs.writeFile(outputFile, inputFileText, 'utf8', (error)=>{
-                if(error) console.log(error);
+                if(error) return console.log(error);
                 console.log('The file has been saved!');
             })
         })
