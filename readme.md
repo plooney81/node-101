@@ -20,8 +20,10 @@
   * [NPM](https://www.npmjs.com/)
 * [How to create a web server](https://learn.digitalcrafts.com/immersive/lessons/back-end-foundations/node-101/#creating-a-server)
   1. Node
-  2. Express - Library for Node.js, specifically for creating servers.
+  2. Express - Node.js library for creating servers.
 * [Object Destructuring](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment#Object_destructuring)
+* nodemon module
+  * gives the ability to make changes to a server without having to stop running the server
 * ADD
 * MORE
 * Later

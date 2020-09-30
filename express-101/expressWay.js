@@ -58,9 +58,9 @@ app.get('/another-page', (req, res)=>{
 })
 
 // adding another route 
-// app.get('*', (req, res)=>{
-//     res.send(`<h1>${req.url.slice(1).toUpperCase()}</h1>`)
-// })
+app.get('*', (req, res)=>{
+    res.send(`<h1>${req.url.slice(1).toUpperCase()}</h1>`)
+})
 
 server.listen(port, hostname, ()=>{
     console.log(`Server is running at http://${hostname}:${port}/`);
