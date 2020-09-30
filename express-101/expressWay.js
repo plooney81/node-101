@@ -9,8 +9,8 @@ const app = express(); // call the express function to create a new app.
 
 const server = http.createServer(app);
 
-app.get('/', (req, res)=>{
-    res.send('Hello World');
+app.get('/', (req, res)=>{  // We don't need to extract the url or manually write an if to match it...Express does that for us
+    res.send('Hello World');   // Also, express automatically sets the statusCode and 'content-type' header.
 })
 
 app.get('/favicon.ico', (req, res)=>{
