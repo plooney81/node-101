@@ -5,8 +5,8 @@
   "main": "small-ex.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node small-ex.js",
-    "dev": "nodemon small-ex.js"
+    "start": "node restPreWork.js",
+    "dev": "nodemon restPreWork.js"
   },
   "keywords": [],
   "author": "",
