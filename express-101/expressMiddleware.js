@@ -199,7 +199,7 @@ app.patch('/api/friends/:handle', (req, res)=>{
     }else{
         
         Object.keys(friendsArray[friendIndex]).forEach((key)=>{
-            // friendsArray[friendIndex][key] = req.body[key] ? req.body[key] : friendsArray[friendIndex][key]; //Tenary op, have to have the colon
+            // friendsArray[friendIndex][key] = (req.body[key] ? req.body[key] : friendsArray[friendIndex][key]); //Tenary op, have to have the colon
             if(req.body[key]){
                 friendsArray[friendIndex][key] = req.body[key]
             }
