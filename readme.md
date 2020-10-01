@@ -28,6 +28,8 @@
   * gives the ability to make changes to a server without having to stop running the server
 * express generator command line module
   * give the ability to quickly and easily generate an express app outline with required documentation.
+* Express middleware
+  * app.get();
 * ADD
 * MORE
 * Later
