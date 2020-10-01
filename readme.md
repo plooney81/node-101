@@ -3,6 +3,7 @@
 
 - [About this repository](#about-this-repository)
 - [Lessons Learned](#lessons-learned)
+- [To be added](#to-be-added)
 
 ## About this repository
 
@@ -30,3 +31,6 @@
 * ADD
 * MORE
 * Later
+  
+## To be added
+* Some GIFS of the different exercises for bullet points above
