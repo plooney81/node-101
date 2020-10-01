@@ -199,9 +199,10 @@ app.patch('/api/friends/:handle', (req, res)=>{
     }else{
         
         Object.keys(friendsArray[friendIndex]).forEach((key)=>{
-            req.body.name ? friendsArray[friendIndex][key] = req.body.name : friendsArray[friendIndex][key];
-            // req.body.handle ? friendsArray[friendIndex][key] = req.body.handle : friendsArray[friendIndex][handle];
-            // req.body.skill ? friendsArray[friendIndex][key] = req.body.skill : friendsArray[friendIndex][skill];
+            // friendsArray[friendIndex][key] = req.body[key] ? req.body[key] : friendsArray[friendIndex][key]; //Tenary op, have to have the colon
+            if(req.body[key]){
+                friendsArray[friendIndex][key] = req.body[key]
+            }
         })
         res.status(202).json();
     }
