@@ -3,7 +3,7 @@
 
 - [About this repository](#about-this-repository)
 - [Lessons Learned](#lessons-learned)
-- [To be added](#to-be-added)
+- [Code Snippets](#code-snippets)
 
 ## About this repository
 
@@ -29,10 +29,15 @@
 * express generator command line module
   * give the ability to quickly and easily generate an express app outline with required documentation.
 * Express middleware
-  * app.get();
+  * app.use();
+* The basics of Express View Engines
+  * Client vs. Server side rendering
 * ADD
 * MORE
 * Later
   
-## To be added
-* Some GIFS of the different exercises for bullet points above
+## Code Snippets
+Object Destructuring
+```JavaScript
+const {animals} = req.params
+```
